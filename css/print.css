@@ -1,0 +1,30 @@
+@media print {
+	body { background:white; color:black; margin:0 }
+	
+	h1, h2, h3, h4, h5, h6 { page-break-after:avoid; 
+     page-break-inside:avoid }
+	img { page-break-inside:avoid; 
+     page-break-after:avoid; }
+	blockquote, table, pre { page-break-inside:avoid }
+	ul, ol, dl  { page-break-before:avoid }
+	
+	
+	.header-navigation-and-search, .user_menu {display: none;}
+	
+	.main {border: 0;
+	
+	a[href]:after {
+   		content:"" !important;
+	}
+	
+	a[href]:after {
+    content: " ("")";
+  	}
+
+  	abbr[title]:after {
+    content: " ("")";
+  	}
+	
+	 p { font-size: 12pt; }
+
+}
