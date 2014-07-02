@@ -52,25 +52,29 @@
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
+
+  <!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    
   <link rel="stylesheet" type="text/css" href="/sites/all/themes/campo_intra/css/intranet.css" />
 
+  <!--[if lt IE 8]>
+      <link rel="stylesheet" type="text/css" href="/sites/all/themes/campo_intra/css/intranet-ie7.css" />
+  <![endif]-->
+
+  <!--[if IE 8]>
+      <link rel="stylesheet" type="text/css" href="/sites/all/themes/campo_intra/css/intranet-ie8.css" />
+  <![endif]-->  
+  
   <meta name="mobile-web-app-capable" content="yes" />
   
+  <link rel="icon" href="/sites/all/themes/campo_intra/images/favicon.png" type="image/png" />
   <link rel="shortcut icon" sizes="196x196" href="/sites/all/themes/campo_intra/images/icon-196x196.png" />
   <link rel="apple-touch-icon-precomposed" sizes="128x128" href="/sites/all/themes/campo_intra/images/icon-128x128.png" />
 
   <?php print $scripts; ?>
 	
-  <!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-  <!--[if IE 8]>
-      <link rel="stylesheet" type="text/css" href="/sites/all/themes/campo_intra/css/intranet-ie8.css" />
-  <![endif]-->
-  <!--[if lt IE 8]>
-      <link rel="stylesheet" type="text/css" href="/sites/all/themes/campo_intra/css/intranet-ie7.css" />
-  <![endif]-->
-
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <?php print $page_top; ?>
